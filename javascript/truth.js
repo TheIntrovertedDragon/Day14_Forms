@@ -27,6 +27,26 @@ function trivia1() {
   }
 
   else if (honeySelected) {
-    trivia1.innerHTML= fname + ", you are correct"
+    triviaAnswer.innerHTML= fname + ", you are correct"
+  }
+}
+
+function tandl() {
+  let tlAnswer = document.getElementById("truthsandlie")
+
+  //get values from form
+  let perilSelected = document.getElementById("peril").checked;
+  let glorySelected = document.getElementById("glory").checked;
+  let tsunamiSelected = document.getElementById("tsunami").checked;
+
+  //results
+  if (perilSelected) {
+    tlAnswer.innerHTML = fname + ", this is not the lie"
+  }
+  else if (glorySelected) {
+    tlAnswer.innerHTML = fname + ", this is not the lie"
+  }
+  else if (tsunamiSelected) {
+    tlAnswer.innerHTML = fname + ", yes, this is the lie"
   }
 }
